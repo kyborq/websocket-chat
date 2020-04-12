@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "live-server ./src --host=192.168.43.228",
-    "server-prod": "live-server ./dist --host=192.168.43.228",
+    "server": "live-server ./src",
+    "server-prod": "live-server ./dist",
     "build": "webpack --mode production"
   },
   "author": "Podyganov K",
