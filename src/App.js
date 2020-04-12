@@ -4,8 +4,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './styles/App.css';
 import './styles/Mobile.css';
 
-import { LoginPage } from './pages/LoginPage.js';
-import { ChatPage } from './pages/ChatPage.js';
+import { LoginPage } from './pages/LoginPage';
+import { ChatPage } from './pages/ChatPage';
 
 export default function App() {
   return (
