@@ -1,0 +1,31 @@
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+  border-radius: 8px;
+  transition: 250ms background-color;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c7c7c7;
+  transition: 250ms background-color;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  /* background-color: #f4f4f4; */
+}
+
+input {
+  outline: none;
+  box-sizing: border-box;
+  display: block;
+}
