@@ -10,14 +10,14 @@
 npm install
 ```
 
-### Запуск сервера в директории /src
+### Сборка вместе с dev-сервером
 
 ```
-npm run server
+npm start
 ```
 
-### Запуск сервера сборки
+### Сборка
 
 ```
-npm run server-prod
+npm run build
 ```
