@@ -11,12 +11,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path='/chat'>
-          <ChatPage />
-        </Route>
-        <Route path='/'>
-          <LoginPage />
-        </Route>
+        <Route path='/chat' component={ChatPage} />
+        <Route path='/' component={LoginPage} />
       </Switch>
     </BrowserRouter>
   );
