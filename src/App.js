@@ -1,19 +1,18 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router , Route, Switch } from "react-router-dom";
 
-import './styles/App.css';
-import './styles/Mobile.css';
+import { HomePage } from "./pages/HomePage";
+import { AboutPage } from "./pages/AboutPage";
 
-import { LoginPage } from './pages/LoginPage';
-import { ChatPage } from './pages/ChatPage';
+import "./styles.css";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Switch>
-        <Route path='/chat' component={ChatPage} />
-        <Route path='/' component={LoginPage} />
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/about" component={AboutPage} />
       </Switch>
-    </BrowserRouter>
+    </Router>
   );
 }

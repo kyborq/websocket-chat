@@ -1,23 +1,2 @@
-# Чат на Websocket1)
-
-С использованием фреймворка React
-
-## Установка и использование
-
-Установка
-
-```
-npm install
-```
-
-### Сборка вместе с dev-сервером
-
-```
-npm start
-```
-
-### Сборка
-
-```
-npm run build
-```
+# react-spa-env
+React SPA Environment
