@@ -1,0 +1,7 @@
+.page {
+  margin: auto;
+  width: 640px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
