@@ -1,0 +1,10 @@
+.app-logo {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+  text-transform: lowercase;
+  background-color: #000000;
+  padding: 5px 11px;
+  user-select: none;
+}
