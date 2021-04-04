@@ -1,10 +1,19 @@
 .app-logo {
+  user-select: none;
+  display: flex;
+  border: 1px solid #6da7f7;
+}
+
+.logo-text {
   font-size: 16px;
   margin: 0;
   font-weight: bold;
   color: white;
   text-transform: lowercase;
-  background-color: #000000;
+  background-color: #6da7f7;
   padding: 5px 11px;
-  user-select: none;
+}
+
+.logo-address {
+  padding: 4px 10px;
 }

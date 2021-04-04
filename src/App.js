@@ -11,7 +11,6 @@ export default function App() {
     <Router>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/chat" component={ChatPage} />
       </Switch>
     </Router>
   );

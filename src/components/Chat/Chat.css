@@ -1,4 +1,4 @@
-.chat {
+/* .chat {
   width: 640px;
   margin: auto;
   flex: 1;
@@ -11,21 +11,7 @@
   overflow: auto;
 }
 
-.chat-form {
-  border: 1px solid #e2e2e2;
-  border-bottom: 0;
-  padding-bottom: 64px;
-}
 
-.chat-field {
-  box-sizing: border-box;
-  width: 100%;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  font-family: "Roboto Mono", monospace;
-  padding: 20px;
-}
 
 .chat-message {
   display: flex;
@@ -43,4 +29,71 @@
 
 .chat-message-text {
   margin: 0;
+} */
+
+.chat {
+  width: 400px;
+}
+
+.chat-view {
+  height: 480px;
+  margin: 16px 0;
+}
+
+.chat-form {
+  border: 1px solid #6da7f7;
+  display: flex;
+}
+
+.chat-field {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: "Roboto Mono", monospace;
+  padding: 12px;
+}
+
+.short-field {
+  width: 100px;
+  background-color: #6da7f7;
+  color: #fff;
+}
+
+.chat-message {
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 1px solid #f2f2f2;
+}
+
+.message-info {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.chat-message-author {
+  background-color: #6da7f7;
+  color: #fff;
+  padding: 4px 8px;
+}
+
+.chat-message-id {
+  font-size: 14px;
+  color: #c7c7c7;
+  padding: 5px 10px;
+}
+
+.chat-send-button {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: "Roboto Mono", monospace;
+  background: none;
+  width: 39px;
+  cursor: pointer;
+  color: #6da7f7;
+}
+
+.chat-send-button:active {
+  color: #fff;
+  background-color: #6da7f7;
 }
