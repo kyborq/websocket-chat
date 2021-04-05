@@ -23,15 +23,6 @@ function onConnect(wsClient) {
       client.ws.send(JSON.stringify(msgObject));
     });
   });
-
-  // wsClient.on("close", function () {
-  //   messages.push({ id: clientID, message: `${clientID} решил уйти` });
-  //   wsClient.send(JSON.stringify({ id: clientID, message: `${clientID} решил уйти` }));
-  //   clients = clients.filter((element) => element.id !== clientID);
-  //   if (clients.length === 0) {
-  //     messages = messages.filter((element) => element.id === 0);
-  //   }
-  // });
 }
 
 console.log("Сервер запущен на 8081 порту");
