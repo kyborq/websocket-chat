@@ -46,11 +46,20 @@ export function ChatForm({ onSubmit }) {
         onChange={(e) => {
           setMessage(e.target.value);
         }}
+        onKeyPress={(e) => {
+          if (message !== "" && author !== "" && e.key === "Enter") {
+            onSubmit && onSubmit({ name: author, text: message });
+            setMessage("");
+          }
+        }}
       />
       <button
         className="chat-send-button"
         onClick={() => {
-          onSubmit && onSubmit({ name: author, text: message });
+          if (message !== "" && author !== "") {
+            onSubmit && onSubmit({ name: author, text: message });
+            setMessage("");
+          }
         }}
       >
         {">"}
