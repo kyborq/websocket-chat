@@ -2,22 +2,30 @@ import React, { useState } from "react";
 
 import "./Chat.css";
 
-export function Chat() {
+export function Chat({ messages, onMessageSend }) {
   return (
     <div className="chat">
-      <ChatView>
-        <ChatMessage id="123456" author="username" message="Hello world!" />
-      </ChatView>
-      <ChatForm />
+      <ChatView data={messages} />
+      <ChatForm
+        onSubmit={(message) => {
+          onMessageSend && onMessageSend(message);
+        }}
+      />
     </div>
   );
 }
 
-export function ChatView({ children }) {
-  return <div className="chat-view">{children}</div>;
+export function ChatView({ data }) {
+  return (
+    <div className="chat-view">
+      {data.map((message, i) => (
+        <ChatMessage key={i} id={message.userid} author={message.username} message={message.message} client={message.clientid} />
+      ))}
+    </div>
+  );
 }
 
-export function ChatForm() {
+export function ChatForm({ onSubmit }) {
   const [author, setAuthor] = useState("user");
   const [message, setMessage] = useState("");
 
@@ -39,7 +47,14 @@ export function ChatForm() {
           setMessage(e.target.value);
         }}
       />
-      <button className="chat-send-button">{">"}</button>
+      <button
+        className="chat-send-button"
+        onClick={() => {
+          onSubmit && onSubmit({ name: author, text: message });
+        }}
+      >
+        {">"}
+      </button>
     </div>
   );
 }
