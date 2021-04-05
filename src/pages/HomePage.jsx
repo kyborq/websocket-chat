@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 import { Page } from "../components/Page";
 import { Logo } from "../components/Logo/Logo";
@@ -26,9 +27,11 @@ const MessagesMockup = [
 ];
 
 export function HomePage() {
+  let { room } = useParams();
+
   return (
     <Page>
-      <Logo text="chatter" />
+      <Logo text="chatter" room={room} />
       <Chat
         messages={MessagesMockup}
         onMessageSend={(message) => {

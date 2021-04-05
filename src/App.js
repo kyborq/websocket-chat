@@ -11,6 +11,7 @@ export default function App() {
     <Router>
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route path="/:room" component={HomePage} />
       </Switch>
     </Router>
   );
